@@ -36,6 +36,12 @@
         flex-direction: row;
         justify-content: space-between;
       }
+	    @media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  header {
+    	width: 100%;
+	  }
+	}    
       #hey{
         padding: 2px;
         margin: 0 auto;
@@ -55,7 +61,6 @@
       }
       #navlink:hover{
         background: transparent;
-        backdrop-filter: blur(3px) opacity(.3);
         transform: scale(1.1);
       }
       #name{
