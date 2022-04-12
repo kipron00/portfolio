@@ -3,9 +3,8 @@
 <script defer src='https://use.fontawesome.com/releases/v5.0.6/js/all.js'></script>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" /> 
     <title></title>
-    <style>
+    <style media="screen">
       @import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Hurricane&family=Inspiration&family=Parisienne&family=Shadows+Into+Light&display=swap');
         *{
          /*outline: 1px solid red;*/
@@ -88,7 +87,7 @@
        }
        .navigation--responsive {
            display: block;
-           background: linear-gradient(to bottom, #7bc6cc, #000000);
+           background: linear-gradient(to bottom, #7bc6cc, #000);
            width: 200px;
            height: 100vh;
            position: fixed;
@@ -163,13 +162,13 @@
      }
      #skills{
        width: 100%;
-       height: 200px;
+       height: 150px;
      }
      .skills{
        position: absolute;
        font-family: 'Shadows into light', cursive;
        width: 100%;
-       height: 200px;
+       height: inherit;
        border: 2px solid black;
        border-radius: 10px;
        overflow: hidden;
@@ -190,22 +189,55 @@
        margin: 0;
      }
      .info{
-       text-align: center;
+       text-align: left;
        color: #ff6600;
        font-size: 150%;
-       margin: 0 auto;
+       margin: 0 10px 0px 300px;
        padding:0px 20px 20px 0px;
+     }
+     .info a{
+       color: #ff6600;
+     }
+     .info a:hover{
+       color: #be93c5;
      }
      @media screen and (max-width: 600px) {
        .info{
          text-align: left;
          padding-left: 10px;
          padding-right: 20px;
-         margin-right: 20px;
+         margin: 0 10px 0 100px;
        }
      }
-     img{
+     .skillimg{
        float: right;
+       width: 50%;
+       height: 100%;
+       margin: 0 200px 0 0;
+     }
+     .info2{
+       text-align: center;
+       color: #ff6600;
+       font-size: 150%;
+       margin: 5px 10px 0 100px;
+       padding:0px 20px 20px 0px;
+     }
+     .info2 a{
+       color:#ff6600;
+     }
+     .info2 a:hover{
+       color: #be93c5;
+     }
+     @media screen and (max-width: 600px) {
+       .info2{
+         text-align: right;
+         padding-left: 20px;
+         padding-right: 10px;
+         margin: 10px 100px 0 5px;
+       }
+     }
+     .skillimg2{
+       float: left;
        width: 50%;
        height: 100%;
      }
@@ -218,11 +250,40 @@
        h4{
        margin-bottom: 10px;
        }
-       img{
-         margin-top: 100px;
+       .skillimg{
+         margin: 60px 0 0 0;
          height: 40%;
        }
+       .skillimg2{
+         margin: 0 auto;
+         height: 50%;
+       }
      }
+     .info3{
+       text-align: left;
+       color: #ff6600;
+       font-size: 150%;
+       margin: 0 10px 0px 300px;
+       padding:0px 20px 20px 0px;
+     }
+     .skillimg3{
+       float: right;
+       width: 50%;
+       height: 100%;
+       margin: 0 200px 50px 0;
+     }
+      @media screen and (max-width: 600px) {
+        .info3{
+          text-align: left;
+          padding-left: 10px;
+          padding-right: 20px;
+          margin: 0 10px 0 70px;
+        }
+        .skillimg3{
+          margin: 0 auto;
+          height: 40%;
+        }
+      }
      footer{
        background-image: linear-gradient(to right, #070606, #220e0e, #361114, #4b1018, #610d1c, #610d1c, #610d1c, #610d1c, #4b1018, #361114, #220e0e, #070606);
        width: 100%;
@@ -263,7 +324,8 @@
         <nav class="main-navigation">
           <a href="#home">Home</a>
           <a href="#about">About</a>
-          <a href="#skills">skills</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </nav>
         <!-- Small display Responsive Navigation begins -->
@@ -278,6 +340,9 @@
                     </li>
                     <li>
                         <a href="#skills">skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
                     </li>
                     <li>
                         <a href="#contact">Contact</a>
@@ -299,13 +364,30 @@
       <hr>
     <section id="skills">
       <div class="skills">
-        <img class="skillimg" src="https://www.svgrepo.com/show/295398/code.svg" alt="cool website">
+        <img class="skillimg" src="https://www.svgrepo.com/show/154015/website.svg" alt="cool website">
       </div>
       <div class="skills">
         <h4>What I do:</h4>
-          <p class="info">I make cool websites.</p>
+          <p class="info">I make cool <a href="#projects">websites</a>.</p>
       </div>
       </section>
+      <section id="skills">
+        <div class="skills">
+          <img class="skillimg2" src="https://www.svgrepo.com/show/295398/code.svg" alt="cool website">
+        </div>
+        <div class="skills">
+            <p class="info2">I work with <a href="https://github.com/kipron00">code</a>.</p>
+        </div>
+        </section>
+        <section id="skills">
+          <div class="skills">
+            <img class="skillimg3" src="https://www.svgrepo.com/show/223725/handshake-deal.svg" alt="cool website">
+          </div>
+          <div class="skills">
+              <p class="info3">I connect you to your client.</p>
+          </div>
+          </section>
+          <hr>
     </main>
   </body>
   <footer>
