@@ -395,12 +395,12 @@
 window.onclick = function(event) {
   if (!event.target.matches('toggle')) {
 
-    var dropdowns = document.getElementsByClassName("navigation--responsive");
+    var toggle = document.getElementsByClassName("navigation--responsive");
     var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+    for (i = 0; i < toggle.length; i++) {
+      var opentoggle = toggle[i];
+      if (opentoggle.classList.contains('show')) {
+        opentoggle.classList.remove('show');
       }
     }
   }
