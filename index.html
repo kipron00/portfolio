@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <script defer src='https://use.fontawesome.com/releases/v5.0.6/js/all.js'></script>
-<script>
-        $('.navbar-collapse a').click(function(){
-            $(".navbar-collapse").collapse('hide');
-        });
-    </script>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
@@ -391,6 +386,26 @@
                     </li>
                 </ul>
             </nav><!-- responsive nav ends-->
+          <script>
+                function myFunction() {
+    document.getElementById("toggle").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('toggle')) {
+
+    var dropdowns = document.getElementsByClassName("navigation--responsive");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+          </script>
     </header>
     <main id="home">
     <section id="about">
